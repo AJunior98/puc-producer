@@ -23,23 +23,23 @@ public class Cliente implements Serializable {
     @JsonProperty(value = "nrCpf")
     private String numeroCpf;
 
-    @NotNull(message = "Informar o código do banco de destino.")
     @Schema(description = "Código do banco destino")
+    @NotNull(message = "Informar o código do banco de destino.")
     @JsonProperty(value = "nrAgencia")
     private String numeroAgencia;
 
-    @NotNull(message = "Informar a agência de destino.")
     @Schema(description = "Agência de destino")
+    @NotNull(message = "Informar a agência de destino.")
     @JsonProperty(value = "nrConta")
     private String numeroConta;
 
-    @NotNull(message = "Informar a conta de destino.")
     @Schema(description = "Conta de destino")
+    @NotNull(message = "Informar a conta de destino.")
     @JsonProperty(value = "digito")
     private Integer digitoConta;
 
-    @NotNull(message = "Informar o nome do Favorecido.")
     @Schema(description = "Nome do Favorecido")
+    @NotNull(message = "Informar o nome do Favorecido.")
     @JsonProperty(value = "nmTitular")
     private String nomeTitularConta;
 
